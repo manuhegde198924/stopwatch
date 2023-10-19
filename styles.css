@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('peakpx\(4\).jpg');
+}
+
+.stopwatch {
+    text-align: center;
+    background-color:tomato;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.controls button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+/* Digital Style */
+.stopwatch .digital {
+    font-size: 36px;
+    /* Other digital style properties */
+}
+
+/* Analog Style */
+.stopwatch .analog {
+    display: none; /* Initially hidden */
+    /* Define analog style properties */
+}
+
+/* Show the analog display when the analog style is selected */
+.stopwatch.analog .analog {
+    display: block;
+}
+
+/* Hide the digital display when the analog style is selected */
+.stopwatch.analog .digital {
+    display: none;
+}
